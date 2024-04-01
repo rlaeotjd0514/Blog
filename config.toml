@@ -1,11 +1,11 @@
-baseURL = 'https://localhost:1313'
-languageCode = 'ko-KR'
-title = '김머성 블로그'
+baseURL = "http://localhost:1313"
+languageCode = "ko-KR"
+title = "김머성 블로9"
 theme = "github-style"
 
 [params]
   author = "김머성"
-  description = ""
+  description = "Description"
   github = "김머성"
   facebook = "김머성"
   twitter = "김머성"
@@ -13,27 +13,27 @@ theme = "github-style"
   instagram = "김머성"
   tumblr = "김머성"
   email = "rlaajtjd0514@gmail.com"
-  url = "http://localhost:1313"
+  url = "https://rlaeotjd0514.github.io/Blog/"
   keywords = "blog, google analytics"
   rss = true
   lastmod = true
-  favicon = "/images/github.png"
-  avatar = "/images/avatar.png"
+  favicon = "/images/favicon.ico"
+  avatar = "/images/github.png"
   headerIcon = "/images/GitHub-Mark-Light-32px.png"
   location = "Korea"
   userStatusEmoji = "😀"
   enableGitalk = true
 
   [params.gitalk]
-    clientID = "Your client ID" # Your client ID
-    clientSecret = "Your client secret" # Your client secret
-    repo = "LuvSia" # 您的博客的github地址Repository name，例如：xxxx.github.io
-    owner = "ventusoon" # 您的GitHub ID
-    admin = "ventusoon" # 您的GitHub ID
-    id = "location.pathname" # 文章页面的链接地址就是ID
-    labels = "gitalk" # Github issue labels. If you used to use Gitment, you can change it
-    perPage = 15 # Pagination size, with maximum 100.
-    pagerDirection = "last" # Comment sorting direction, available values are 'last' and 'first'.
+    clientID = "Your client ID"
+    clientSecret = "Your client secret"
+    repo = "LuvSia"
+    owner = "ventusoon"
+    admin = "ventusoon"
+    id = "location.pathname"
+    labels = "gitalk"
+    perPage = 15
+    pagerDirection = "last" # Comment sorting direction, available values are "last" and "first".
     createIssueManually = true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
     distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.
     proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
