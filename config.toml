@@ -38,8 +38,8 @@ theme = "github-style"
     distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.
     proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
   [[params.links]]
-    title = "Link"
-    href = "https://github.com/meik2333"
+    title = "/post"
+    href = "http://localhost:1313/content/post"
   [[params.links]]
     title = "Link2"
     href = "https://meik2333.com"
