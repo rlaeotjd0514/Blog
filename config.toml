@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "https://rlaeotjd0514.github.io/Blog/"
 languageCode = "ko-KR"
 title = "김머성 블로9"
 theme = "github-style"
@@ -38,8 +38,8 @@ theme = "github-style"
     distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.
     proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
   [[params.links]]
-    title = "/post"
-    href = "http://localhost:1313/content/post"
+    title = "Link1"
+    href = "http://localhost:1313/post"
   [[params.links]]
     title = "Link2"
     href = "https://meik2333.com"
