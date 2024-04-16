@@ -1,0 +1,49 @@
+baseURL = "https://127.0.0.1:1313"
+languageCode = "ko-KR"
+title = "김머성 블로9"
+theme = "Amethyst"
+
+[params]
+  author = "김머성"
+  description = "Description"
+  github = "김머성"
+  facebook = "김머성"
+  twitter = "김머성"
+  linkedin = "김머성"
+  instagram = "김머성"
+  tumblr = "김머성"
+  email = "rlaajtjd0514@gmail.com"
+  url = "https://rlaeotjd0514.github.io/Blog/"
+  keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  favicon = "/images/favicon.ico"
+  avatar = "/images/github.png"
+  headerIcon = "/images/GitHub-Mark-Light-32px.png"
+  location = "Korea"
+  userStatusEmoji = "😀"
+  enableGitalk = true
+
+  [params.gitalk]
+    clientID = "Your client ID"
+    clientSecret = "Your client secret"
+    repo = "LuvSia"
+    owner = "ventusoon"
+    admin = "ventusoon"
+    id = "location.pathname"
+    labels = "gitalk"
+    perPage = 15
+    pagerDirection = "last" # Comment sorting direction, available values are "last" and "first".
+    createIssueManually = true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
+    distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.
+    proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
+  [[params.links]]
+    title = "Link1"
+    href = "https://rlaeotjd0514.github.io/Blog/"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-6SPMP42E7R"

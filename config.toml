@@ -1,53 +1,62 @@
-baseURL = "https://rlaeotjd0514.github.io/Blog/"
+baseURL = "https://127.0.0.1:1313"
 languageCode = "ko-KR"
-title = "김머성 블로9"
-theme = "github-style"
+
+# Book configuration
+disablePathToLower = true
+enableGitInfo = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.tableOfContents]
+startLevel = 1
+
+# Sidebar menu additional links
+[[menu.after]]
+name = "Prev Blog"
+url = "https://steins-gate.tistory.com"
+weight = 10
 
 [params]
-  author = "김머성"
-  description = "Description"
-  github = "김머성"
-  facebook = "김머성"
-  twitter = "김머성"
-  linkedin = "김머성"
-  instagram = "김머성"
-  tumblr = "김머성"
-  email = "rlaajtjd0514@gmail.com"
-  url = "https://rlaeotjd0514.github.io/Blog/"
-  keywords = "blog, google analytics"
-  rss = true
-  lastmod = true
-  favicon = "/images/favicon.ico"
-  avatar = "/images/github.png"
-  headerIcon = "/images/GitHub-Mark-Light-32px.png"
-  location = "Korea"
-  userStatusEmoji = "😀"
-  enableGitalk = true
+name = "김머성"
+title = "김머성 블로9"
+enableLinkPreview = true
+enableLatex = true
+enableCodeBlockTitle = true
+enableCodeBlockCopy = true
+enableCallouts = true
+enableFooter = true
+enableContextualBacklinks = true
+enableRecentNotes = false
+enableGitHubEdit = true
+enableMermaid = true
+GitHubLink = "https://github.com/64bitpandas/amethyst"
 
-  [params.gitalk]
-    clientID = "Your client ID"
-    clientSecret = "Your client secret"
-    repo = "LuvSia"
-    owner = "ventusoon"
-    admin = "ventusoon"
-    id = "location.pathname"
-    labels = "gitalk"
-    perPage = 15
-    pagerDirection = "last" # Comment sorting direction, available values are "last" and "first".
-    createIssueManually = true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
-    distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.
-    proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
-  [[params.links]]
-    title = "Link1"
-    href = "http://localhost:1313/post"
-  [[params.links]]
-    title = "Link2"
-    href = "https://meik2333.com"
-    icon = "https://meik2333.com/images/avatar.png"
+[params.search]
+enableSemanticSearch = false
+operandApiKey = "REPLACE-WITH-YOUR-OPERAND-API-KEY"
+operandIndexId = "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
 
-[frontmatter]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+[params.description]
+Notes = "Description"
 
-[services]
-  [services.googleAnalytics]
-    ID = "UA-123456-789"
+[[params.links]]
+link_name = "Website"
+link = "https://bencuan.me"
+
+[[params.links]]
+link_name = "Blog"
+link = "https://blog.bencuan.me"
+
+BookToC = true
+BookSection = "/"
+BookRepo = "https://github.com/64bitpandas/amethyst"
+BookEditPath = "edit/main/exampleSite"
+BookDateFormat = "January 2, 2006"
+BookComments = true
+BookTranslatedOnly = false
+
+enableSPA = false
+BookSearch = false
+BookServiceWorker = false
+BookPortableLinks = false
